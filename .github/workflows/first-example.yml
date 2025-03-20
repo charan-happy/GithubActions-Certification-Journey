@@ -8,7 +8,7 @@ jobs:
         steps:
             - name: checkout repo
               uses: actions/checkout@v4
-              
+
             - name: welcome message
               run: echo "welcome to my first github workflow"
             
@@ -16,5 +16,5 @@ jobs:
               run: ls 
 
             - name: read file
-              run: cd ..; cat README.md
+              run: cat README.md
 
