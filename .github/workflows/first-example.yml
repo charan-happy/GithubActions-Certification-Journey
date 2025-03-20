@@ -6,6 +6,9 @@ jobs:
     first-job:
         runs-on: ubuntu-latest
         steps:
+            - name: checkout repo
+              uses: actions/checkout@v4
+              
             - name: welcome message
               run: echo "welcome to my first github workflow"
             
@@ -13,5 +16,5 @@ jobs:
               run: ls 
 
             - name: read file
-              run: cat README.md
-              
+              run: cd ..; cat README.md
+
