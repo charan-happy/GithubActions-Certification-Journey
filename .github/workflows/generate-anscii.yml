@@ -22,5 +22,5 @@ jobs:
               run: cat dragon.txt
 
             - name: checkout repo files 
-              uses: ls -lrta
+              run: ls -lrta
 
